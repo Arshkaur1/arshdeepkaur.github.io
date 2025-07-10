@@ -1,150 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device‑width, initial‑scale=1.0">
   <title>Arshdeep Kaur | Data Scientist</title>
-  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>👋 Hi, I'm Arshdeep Kaur</h1>
-    <p>Data Scientist | ML Researcher | Analytics Strategist</p>
+  <header class="site-header">
+    <h1>Arshdeep Kaur</h1>
     <nav>
+      <a href="#about">About</a>
       <a href="#projects">Projects</a>
       <a href="#skills">Skills</a>
-      <a href="resume.pdf" target="_blank">Resume</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
 
-  <section id="about">
+  <section id="hero">
+    <div class="hero-content fade-in">
+      <h2>👋 Hi, I'm Arshdeep</h2>
+      <p>Data Scientist • ML Researcher • Analytics Strategist</p>
+      <p>I turn data into stories, decisions, and impact across finance, health, and sustainability.</p>
+    </div>
+  </section>
+
+  <section id="about" class="fade-in">
     <h2>About Me</h2>
-    <p>
-      I'm a data science enthusiast with a strong foundation in machine learning, time series forecasting, optimization, and applied analytics. I’ve worked on diverse projects — from screening lung cancer data to detecting fuel fraud and forecasting investment flows in the Canadian financial sector.
-    </p>
-    <p>
-      What sets me apart is my ability to combine strong data science skills with domain-specific thinking and storytelling. I care about making data understandable, accessible, and actionable — whether that’s through dashboards, predictive models, or policy simulations.
-    </p>
-    <p>
-      As a lifelong learner and international student in Canada, I bring a global perspective and a collaborative mindset to every project I work on.
-    </p>
+    <p>I'm a data scientist with a passion for forecasting, optimization, and explainable ML. My work spans lung cancer screening, fuel fraud detection, and fund forecasting—where I blend analytics with storytelling for real-world impact.</p>
+    <p>As an international student in Canada, I bring a global mindset and collaborative energy to every project.</p>
   </section>
 
   <section id="projects">
     <h2>Featured Projects</h2>
-
-    <div class="project">
-      <h3>📊 Investment Fund Modeling & Risk Forecasting</h3>
-      <p>
-        Processed over 30,000 fund-level records using Python and SQL to model inflows, NAV shifts, and risk exposure. Applied predictive modeling, causal inference, and integrated LLMs to generate automated summaries of fund strategies and sentiment insights.
-      </p>
-      <ul>
-        <li><strong>Tools:</strong> Python, SQL, Causal Inference, LLMs (OpenAI API), Pandas</li>
-        <li><strong>Focus:</strong> Forecasting, Portfolio Volatility, Fund Risk Analysis</li>
-      </ul>
-      <a href="https://github.com/Arshkaur1/Investment-Fund-Forecasting">View Project →</a>
-    </div>
-
-    <div class="project">
-      <h3>🌍 Global CO₂ & GHG Emissions Analysis</h3>
-      <p>
-        Investigated greenhouse gas emissions across countries and industries using time-series and policy lens. Correlated environmental metrics with life expectancy data to highlight the intersection of environmental degradation, inequality, and climate justice.
-      </p>
-      <ul>
-        <li><strong>Tools:</strong> Python, SQL, Pandas, Matplotlib, Plotly</li>
-        <li><strong>Focus:</strong> Climate Data, Health Inequity, Just Transition Framework</li>
-      </ul>
-      <a href="https://github.com/Arshkaur1/Global-GHG-Emissions-Analysis">View Project →</a>
-    </div>
-
-    <div class="project">
-      <h3>🚚 Canada Freight Revenue Analysis</h3>
-      <p>
-        Performed linear regression on freight transportation data using Python to model revenue drivers and identify optimization opportunities. Delivered insights to improve logistics planning and resource allocation.
-      </p>
-      <ul>
-        <li><strong>Tools:</strong> Python, Scikit-learn, Pandas, Matplotlib</li>
-        <li><strong>Focus:</strong> Transportation Efficiency, Linear Modeling</li>
-      </ul>
-      <a href="https://github.com/Arshkaur1/Freight-Revenue-Canada">View Project →</a>
-    </div>
-
-    <div class="project">
-      <h3>📚 Book Recommender System</h3>
-      <p>
-        Developed an object-oriented recommender system using collaborative filtering to provide personalized book suggestions and improve reader engagement. Built scalable classes and rating matrices for multi-user input.
-      </p>
-      <ul>
-        <li><strong>Tools:</strong> Python, OOP, Numpy</li>
-        <li><strong>Focus:</strong> Recommender Systems, Personalization, User Profiling</li>
-      </ul>
-      <a href="https://github.com/Arshkaur1/Book-Recommender">View Project →</a>
-    </div>
-
-    <div class="project">
-      <h3>📈 Amazon Global Sales Dashboard</h3>
-      <p>
-        Designed and developed an interactive Power BI dashboard to explore global sales performance, customer segmentation, and marketing performance. Provided actionable insights to support cross-regional strategy.
-      </p>
-      <ul>
-        <li><strong>Tools:</strong> Power BI, DAX, Data Modeling</li>
-        <li><strong>Focus:</strong> Sales Analytics, Marketing Strategy, Regional Insights</li>
-      </ul>
-      <a href="https://github.com/Arshkaur1/Amazon-Sales-Dashboard">View Project →</a>
+    <div class="projects-grid">
+      <!-- Project cards inserted here -->
+      <!-- Example: -->
+      <div class="card fade-in">
+        <h3>Investment Fund Modeling & Risk Forecasting</h3>
+        <p>Processed 30K+ records with Python, SQL, causal inference & LLM summaries to analyze fund strategies & volatility.</p>
+        <a href="https://github.com/Arshkaur1/Investment-Fund-Forecasting" target="_blank">View on GitHub →</a>
+      </div>
+      <!-- repeat for other projects -->
     </div>
   </section>
 
-  <section id="skills">
+  <section id="skills" class="fade-in">
     <h2>Skills & Tools</h2>
-
-    <h3>💻 Programming</h3>
-    <ul>
-      <li>Python (Pandas, Scikit-learn, NumPy, SHAP, XGBoost, LightGBM)</li>
-      <li>SQL (PostgreSQL, BigQuery)</li>
-      <li>R (Basic proficiency)</li>
-    </ul>
-
-    <h3>📊 Analytics & Modeling</h3>
-    <ul>
-      <li>Time Series Forecasting, Predictive Modeling, A/B Testing</li>
-      <li>Prescriptive Analytics, Linear Programming, Monte Carlo Simulation</li>
-      <li>Clustering, Feature Engineering, Cross-Validation</li>
-    </ul>
-
-    <h3>🧠 ML & Explainability</h3>
-    <ul>
-      <li>Classification, Regression, Model Evaluation (ROC-AUC, F1)</li>
-      <li>Model Explainability with SHAP & LIME</li>
-    </ul>
-
-    <h3>📈 Visualization & Reporting</h3>
-    <ul>
-      <li>Power BI, Tableau, Plotly, Seaborn, Matplotlib</li>
-      <li>Jupyter Notebooks, Dashboards, Executive Summaries</li>
-    </ul>
-
-    <h3>🔧 Tools & Platforms</h3>
-    <ul>
-      <li>Git, GitHub, VS Code, Excel Solver, Google Cloud (BigQuery)</li>
-      <li>JIRA, Confluence, Slack</li>
-    </ul>
+    <div class="skills-grid">
+      <ul><li><strong>Languages:</strong> Python, SQL, R</li><li><strong>Libraries:</strong> Pandas, Scikit-learn, SHAP, XGBoost</li></ul>
+      <ul><li><strong>Analytics:</strong> Time Series, Causal Inference, Regression, Optimization</li><li><strong>Tools:</strong> Power BI, Plotly, Git, Docker</li></ul>
+    </div>
   </section>
 
-  <section id="contact">
+  <section id="contact" class="fade-in">
     <h2>Let’s Connect</h2>
-    <p>
-      I’m always open to discussing data science, impact-driven research, or new collaborations. Whether it’s a full-time role, a freelance project, or just exchanging ideas, feel free to reach out.
-    </p>
-    <ul>
-      <li>Email: <a href="mailto:yourname@email.com">yourname@email.com</a></li>
-      <li>LinkedIn: <a href="https://www.linkedin.com/in/arshdeep-kaur" target="_blank">linkedin.com/in/arshdeep-kaur</a></li>
-      <li>GitHub: <a href="https://github.com/Arshkaur1" target="_blank">github.com/Arshkaur1</a></li>
-    </ul>
+    <p>I'm open to full-time roles, freelance projects, or collaboration. Feel free to reach out!</p>
+    <p><strong>Email:</strong> <a href="mailto:yourname@email">
+ yourname@email</a></p>
+    <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/arshdeep‑kaur">linkedin.com/in/arshdeep‑kaur</a></p>
   </section>
 
   <footer>
-    <p>Made with 💡 and ☕ by Arshdeep Kaur | © 2025</p>
+    <p>Made with 💡 and ☕ | Arshdeep Kaur © 2025</p>
   </footer>
+
+  <script>
+    // smooth scrolling
+    document.querySelectorAll('header nav a').forEach(link => {
+      link.onclick = e => {
+        e.preventDefault();
+        document.querySelector(link.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+      }
+    });
+
+    // fade-in observer
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if(e.isIntersecting) e.target.classList.add('visible');
+      });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+  </script>
 </body>
 </html>

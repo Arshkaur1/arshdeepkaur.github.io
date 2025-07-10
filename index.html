@@ -1,86 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device‑width, initial‑scale=1.0">
-  <title>Arshdeep Kaur | Data Scientist</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Arshdeep Kaur | Interactive Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body>
-  <header class="site-header">
+  <header class="header">
     <h1>Arshdeep Kaur</h1>
     <nav>
-      <a href="#about">About</a>
+      <a href="#hero">Home</a>
       <a href="#projects">Projects</a>
       <a href="#skills">Skills</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
 
-  <section id="hero">
-    <div class="hero-content fade-in">
+  <section id="hero" class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
       <h2>👋 Hi, I'm Arshdeep</h2>
-      <p>Data Scientist • ML Researcher • Analytics Strategist</p>
-      <p>I turn data into stories, decisions, and impact across finance, health, and sustainability.</p>
+      <p>Data Scientist | ML Strategist | Problem Solver</p>
+      <button onclick="document.getElementById('projects').scrollIntoView({behavior:'smooth'})">Explore Projects ↓</button>
     </div>
   </section>
 
-  <section id="about" class="fade-in">
-    <h2>About Me</h2>
-    <p>I'm a data scientist with a passion for forecasting, optimization, and explainable ML. My work spans lung cancer screening, fuel fraud detection, and fund forecasting—where I blend analytics with storytelling for real-world impact.</p>
-    <p>As an international student in Canada, I bring a global mindset and collaborative energy to every project.</p>
-  </section>
-
-  <section id="projects">
+  <section id="projects" class="projects">
     <h2>Featured Projects</h2>
-    <div class="projects-grid">
-      <!-- Project cards inserted here -->
-      <!-- Example: -->
-      <div class="card fade-in">
-        <h3>Investment Fund Modeling & Risk Forecasting</h3>
-        <p>Processed 30K+ records with Python, SQL, causal inference & LLM summaries to analyze fund strategies & volatility.</p>
-        <a href="https://github.com/Arshkaur1/Investment-Fund-Forecasting" target="_blank">View on GitHub →</a>
+    <div class="project-grid">
+      <!-- Project Card Template -->
+      <div class="project-card" onclick="window.open('https://github.com/Arshkaur1/Investment-Fund-Forecasting','_blank')">
+        <div class="card-front">
+          <h3>Investment Fund Forecasting</h3>
+        </div>
+        <div class="card-back">
+          <p>📊 Modeled 30K+ records with Python, SQL, LLMs & causal inference. Click to view!</p>
+        </div>
       </div>
-      <!-- repeat for other projects -->
+      <!-- Repeat for other projects -->
+      <!-- ... -->
     </div>
   </section>
 
-  <section id="skills" class="fade-in">
+  <section id="skills" class="skills">
     <h2>Skills & Tools</h2>
-    <div class="skills-grid">
-      <ul><li><strong>Languages:</strong> Python, SQL, R</li><li><strong>Libraries:</strong> Pandas, Scikit-learn, SHAP, XGBoost</li></ul>
-      <ul><li><strong>Analytics:</strong> Time Series, Causal Inference, Regression, Optimization</li><li><strong>Tools:</strong> Power BI, Plotly, Git, Docker</li></ul>
+    <div class="skill-bar">
+      <label>Python</label><div class="bar"><div style="width: 95%"></div></div>
     </div>
+    <div class="skill-bar">
+      <label>Machine Learning</label><div class="bar"><div style="width: 90%"></div></div>
+    </div>
+    <!-- Add more skill bars -->
   </section>
 
-  <section id="contact" class="fade-in">
+  <section id="contact" class="contact">
     <h2>Let’s Connect</h2>
-    <p>I'm open to full-time roles, freelance projects, or collaboration. Feel free to reach out!</p>
-    <p><strong>Email:</strong> <a href="mailto:yourname@email">
- yourname@email</a></p>
-    <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/arshdeep‑kaur">linkedin.com/in/arshdeep‑kaur</a></p>
+    <p>💬 I'm open to roles, freelance gigs, or collabs. Say hello!</p>
+    <p>Email: <a href="mailto:yourname@email.com">yourname@email.com</a></p>
+    <p>LinkedIn: <a href="#">linkedin.com/in/arshdeep-kaur</a></p>
   </section>
 
-  <footer>
-    <p>Made with 💡 and ☕ | Arshdeep Kaur © 2025</p>
-  </footer>
+  <footer>Made with ❤️ & ☕ | © 2025 Arshdeep Kaur</footer>
 
   <script>
-    // smooth scrolling
-    document.querySelectorAll('header nav a').forEach(link => {
-      link.onclick = e => {
-        e.preventDefault();
-        document.querySelector(link.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
-      }
-    });
-
-    // fade-in observer
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(e => {
-        if(e.isIntersecting) e.target.classList.add('visible');
-      });
-    }, { threshold: 0.1 });
-    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+    ScrollReveal().reveal('.project-card', { interval: 200, scale: 0.9 });
   </script>
 </body>
 </html>
